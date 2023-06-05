@@ -10,11 +10,9 @@ export class MailService {
             return Promise.resolve()
         }
 
-        const { region, accessKeyId, secretAccessKey } = getConfig().sesConfig
+        const { region } = getConfig().sesConfig
         const ses = new SES({
-            region,
-            accessKeyId,
-            secretAccessKey
+            region
         })
         const { from } = getConfig().mailConfig
         const body = content.html

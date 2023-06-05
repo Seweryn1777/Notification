@@ -102,12 +102,6 @@ export class EnvironmentVariables {
     @IsString()
     readonly SES_REGION: string
 
-    @IsString()
-    readonly AWS_ACCESS_KEY_ID: string
-
-    @IsString()
-    readonly AWS_SECRET_ACCESS_KEY: string
-
     @IsEmail()
     readonly FROM_ADDRESS: string
 
