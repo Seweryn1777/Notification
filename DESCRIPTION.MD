@@ -1,4 +1,4 @@
-## User microservice
+## Notification microservice
     Notification microservice is a component in a language platform application based on microservices architecture
     and the NestJS framework. Its main task is to handle the sending of notifications using AWS SES (Amazon Simple Email Service).
 
