@@ -22,10 +22,11 @@ export class JwtStrategy extends PassportStrategy(CustomStrategy, AuthStrategy.J
                 return false
             }
 
-            const { userUUID } = this.jwtService.verify<DecodedNeiToken>(jwtToken)
+            const { userUUID, role } = this.jwtService.verify<DecodedNeiToken>(jwtToken)
 
             return {
                 userUUID,
+                role,
                 jwtToken
             }
         } catch {
